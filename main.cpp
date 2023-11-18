@@ -40,8 +40,8 @@ void merge(){
 void mergeSort(vector<int>&A, int left,int right){
      if (left<right){
         int center = (left + right)/2;
-        MergeSort(A,left,center);
-        MergeSort(A,center+1,right);
+        mergeSort(A,left,center);
+        mergeSort(A,center+1,right);
         merge(A,left,center+1,right);
      }
 }
